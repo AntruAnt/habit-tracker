@@ -1,0 +1,14 @@
+{
+  "name": "habit-tracker",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "npm run start -w @habit-tracker/mobile --",
+    "dev:api": "npm run dev -w @habit-tracker/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  }
+}

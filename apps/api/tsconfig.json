@@ -1,0 +1,23 @@
+{
+  // Typecheck only: Node 24 runs the .ts sources directly by stripping types, so nothing is emitted.
+  "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    // Only this workspace's @types/node (Node 24); ignore other @types hoisted to the repo root.
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    // Required by Node type stripping: explicit .ts imports, and no syntax that needs compiling
+    // (enums, namespaces, parameter properties).
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "tests"]
+}

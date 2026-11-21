@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Feedback loop (the 21-day cycle) with a check mark breaking out through its gap. -->
+  <path d="M84 50 A34 34 0 1 1 67 20.555" fill="none" stroke="#1abc9c" stroke-width="9" stroke-linecap="round"/>
+  <polyline points="31,50 44,63 82,25" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
